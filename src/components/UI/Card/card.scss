@@ -1,0 +1,105 @@
+.card{
+  width: 350px;
+  height: 406px;
+  border-radius: 30px;
+  background: #ffffff;
+
+  &__img{
+    height: auto;
+    width: 219px;
+  }
+
+  &__img_container{
+    height: 306px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__text_container{
+    width: 310px;
+    height: 57px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    
+  }
+
+  &__text_wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  &__text_wrapper-right{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+
+
+  &__title{
+    font-family: Montserrat;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #1C1C27;
+  }
+
+  &__buy_btn{
+    border: none;
+    background: transparent;
+    font-family: Montserrat;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:#000000;
+    cursor: pointer;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  &__price_wrapper{
+    display: flex;
+    flex-direction: column;
+    color:#FFA542;
+    align-items: center;
+    font-family: Montserrat;
+    font-weight: 600;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  &__price{
+    font-size: 17px;
+    line-height: 21px;
+  }
+
+  &__price-prev{
+    font-size: 13px;
+    line-height: 16px;
+    text-decoration: line-through;
+    color: #FFCE7F;
+  }
+
+  &__stars{
+    display: flex;
+    align-items: center;
+    height: 21px;
+    background-image: url('./star.svg');
+    background-size: contain;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    padding-left: 33px;
+    color: #838383;
+  }
+}

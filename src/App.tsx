@@ -1,3 +1,4 @@
+import Footer from 'components/Footer';
 import BasketPage from 'pages/BasketPage';
 import MainPage from 'pages/MainPage';
 import React from 'react';
@@ -14,6 +15,7 @@ function App() {
           <Route path="/basket" element={<BasketPage />} />
           <Route path="*" element={<h2>404 not found</h2>} />
         </Routes>
+        <Footer />
       </div>
     </BrowserRouter>
   );
