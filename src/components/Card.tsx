@@ -23,13 +23,13 @@ export default function Card({ data }: IProps) {
       <div className="card__text_container">
         <div className="card__text_wrapper">
           <span className="card__title">{title}</span>
-          <div className="card__stars">{rate}</div>
-        </div>
-        <div className="card__text_wrapper-right">
           <div className="card__price_wrapper">
             <span className="card__price">{`${price} ₽`}</span>
             <span className="card__price-prev">{prevPrice && `${prevPrice} ₽`}</span>
           </div>
+        </div>
+        <div className="card__btn_wrapper">
+          <div className="card__stars">{rate}</div>
           <button className="card__buy_btn" onClick={addToBasket}>
             Купить
           </button>

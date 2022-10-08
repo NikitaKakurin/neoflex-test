@@ -11,7 +11,7 @@ export default function MainPage() {
       <h2 className="main__title">Наушники</h2>
       <div className="main__cards">{wireCards.map(generateCards)}</div>
       <h2 className="main__title">Беспроводные наушники</h2>
-      <div className="main__cards">{wirelessCards.map(generateCards)}</div>
+      <div className="main__cards main__cards_bottom">{wirelessCards.map(generateCards)}</div>
     </main>
   );
 }
