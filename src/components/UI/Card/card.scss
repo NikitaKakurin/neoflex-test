@@ -64,6 +64,8 @@
   }
 
   &__buy_btn{
+    display: flex;
+    align-items: flex-end;
     border: none;
     background: transparent;
     font-family: Montserrat;
@@ -74,8 +76,12 @@
     text-align: left;
     color:#000000;
     cursor: pointer;
-    display: flex;
-    align-items: flex-end;
+    transition: all .3s;
+
+    &:hover{
+      transform: scale(1.2);
+      color:#e88b21;
+    }
   }
 
   &__price_wrapper{

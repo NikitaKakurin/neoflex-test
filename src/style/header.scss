@@ -26,10 +26,10 @@
     text-align: left;
 
     cursor: pointer;
-    transition: transform .3s;
+    transition: color .3s;
 
     &:hover{
-      transform: scale(1.2);
+      color:#e88b21;
     }
   }
 }

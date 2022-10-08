@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import BasketIcon from './BasketIcon';
 import { useInBasketContext } from 'context/context';
-import { IInBasket } from 'model/typescript';
 import { getAmount } from 'utils/getAmount';
 import 'style/header.scss';
 

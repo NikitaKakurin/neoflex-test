@@ -1,5 +1,5 @@
 import React from 'react';
-import 'components/UI/Basket/basketIcon.scss';
+import 'components/UI/BasketIcon/basketIcon.scss';
 interface IProps {
   count: number;
   alt: string;
