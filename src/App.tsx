@@ -4,24 +4,27 @@ import MainPage from 'pages/MainPage';
 import React, { useState } from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
-import { basketCountContext } from 'context/context';
+import { inBasketContext } from 'context/context';
 import { IInBasket } from 'model/typescript';
+import Page404 from 'pages/Page404';
+
 function App() {
-  const [basketCount, setBasketCount] = useState(0);
+  const arr: IInBasket = {};
+  const [inBasket, setInBasket] = useState(arr);
 
   return (
     <BrowserRouter>
-      <basketCountContext.Provider value={{ basketCount, setBasketCount }}>
+      <inBasketContext.Provider value={{ inBasket, setInBasket }}>
         <div className="container">
           <Header />
           <Routes>
             <Route path="/" element={<MainPage />} />
             <Route path="/basket" element={<BasketPage />} />
-            <Route path="*" element={<h2>404 not found</h2>} />
+            <Route path="*" element={<Page404 />} />
           </Routes>
           <Footer />
         </div>
-      </basketCountContext.Provider>
+      </inBasketContext.Provider>
     </BrowserRouter>
   );
 }

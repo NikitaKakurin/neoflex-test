@@ -1,23 +1,23 @@
 import React from 'react';
 import 'components/UI/Card/card.scss';
 import { ICard } from 'model/typescript';
-import { useBasketCountContext } from 'context/context';
+import { useInBasketContext } from 'context/context';
 interface IProps {
   data: ICard;
 }
 
 export default function Card({ data }: IProps) {
   const { img, title, rate, prevPrice, price, id } = data;
-  const { setBasketCount } = useBasketCountContext();
+  const { setInBasket } = useInBasketContext();
   function addToBasket() {
-    setBasketCount((prev) => {
-      return prev + 1;
+    setInBasket((prev) => {
+      return { ...prev, ...{ [id]: prev[id] ? prev[id] + 1 : 1 } };
     });
   }
   return (
     <div className="card">
       <div className="card__img_container">
-        <img src={img} alt="image1" className="card__img" />
+        <img src={img} alt={title} className="card__img" />
       </div>
 
       <div className="card__text_container">

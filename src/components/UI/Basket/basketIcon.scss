@@ -27,6 +27,12 @@
   &__img{
     width: 23px;
     height: 23px;
+    cursor: pointer;
+    transition: transform .3s;
+
+    &:hover{
+      transform: scale(1.2);
+    }
   }
 
 }

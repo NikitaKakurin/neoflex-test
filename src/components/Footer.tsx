@@ -11,18 +11,18 @@ export default function Footer() {
       </h2>
       <div className="footer__navigation">
         <div className="footer__navigation_left">
-          <Link to="/" className="footer__link">
+          <Link to="/favourites" className="footer__link">
             Избранное
           </Link>
-          <Link to="/" className="footer__link">
-            Корзины
+          <Link to="/basket" className="footer__link">
+            Корзина
           </Link>
-          <Link to="/" className="footer__link">
+          <Link to="/contacts" className="footer__link">
             Контакты
           </Link>
         </div>
         <div className="footer__navigation_right">
-          <Link to="/" className="footer__link">
+          <Link to="/rules" className="footer__link">
             Условия Сервиса
           </Link>
           <div className="footer__lang_container">

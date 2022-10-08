@@ -8,6 +8,5 @@ export interface ICard {
   id: string;
 }
 export interface IInBasket {
-  id: 'string';
-  count: number;
+  [id: string]: number;
 }
