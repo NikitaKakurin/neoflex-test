@@ -25,11 +25,22 @@ export default function Footer() {
           <Link to="/" className="footer__link">
             Условия Сервиса
           </Link>
-          <div className="footer__lang">
+          <div className="footer__lang_container">
             <span className="footer__lang footer__lang-active">Рус</span>
-            <span className="footer__lang footer__lang">Eng</span>
+            <span className="footer__lang">Eng</span>
           </div>
         </div>
+      </div>
+      <div className="social">
+        <a href="#" className="social__link">
+          <img src="./assets/svg/vk.svg" alt="vk" className="social__img" />
+        </a>
+        <a href="#" className="social__link">
+          <img src="./assets/svg/telegram.svg" alt="telegram" className="social__img" />
+        </a>
+        <a href="#" className="social__link">
+          <img src="./assets/svg/whatsapp.svg" alt="whatsapp" className="social__img" />
+        </a>
       </div>
     </footer>
   );

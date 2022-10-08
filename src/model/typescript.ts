@@ -5,4 +5,9 @@ export interface ICard {
   rate: string;
   title: string;
   type: string;
+  id: string;
+}
+export interface IInBasket {
+  id: 'string';
+  count: number;
 }

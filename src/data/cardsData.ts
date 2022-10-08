@@ -7,6 +7,7 @@ export const cardsData: ICard[] = [
     rate: '4.7',
     title: 'Apple BYZ S852I',
     type: 'wire',
+    id: '1',
   },
   {
     img: '/assets/img/image2.png',
@@ -15,6 +16,7 @@ export const cardsData: ICard[] = [
     rate: '4.5',
     title: 'Apple EarPods',
     type: 'wire',
+    id: '2',
   },
   {
     img: '/assets/img/image3.png',
@@ -23,6 +25,7 @@ export const cardsData: ICard[] = [
     rate: '4.5',
     title: 'Apple EarPods',
     type: 'wire',
+    id: '3',
   },
   {
     img: '/assets/img/image4.png',
@@ -31,6 +34,7 @@ export const cardsData: ICard[] = [
     rate: '4.7',
     title: 'Apple BYZ S852I',
     type: 'wire',
+    id: '4',
   },
   {
     img: '/assets/img/image5.png',
@@ -39,6 +43,7 @@ export const cardsData: ICard[] = [
     rate: '4.5',
     title: 'Apple EarPods',
     type: 'wire',
+    id: '5',
   },
   {
     img: '/assets/img/image6.png',
@@ -47,6 +52,7 @@ export const cardsData: ICard[] = [
     rate: '4.5',
     title: 'Apple EarPods',
     type: 'wire',
+    id: '6',
   },
   {
     img: '/assets/img/image7.png',
@@ -55,6 +61,7 @@ export const cardsData: ICard[] = [
     rate: '4.7',
     title: 'Apple AirPods',
     type: 'wireless',
+    id: '7',
   },
   {
     img: '/assets/img/image8.png',
@@ -63,6 +70,7 @@ export const cardsData: ICard[] = [
     rate: '4.7',
     title: 'GERLAX GH-04',
     type: 'wireless',
+    id: '8',
   },
   {
     img: '/assets/img/image9.png',
@@ -71,5 +79,9 @@ export const cardsData: ICard[] = [
     rate: '4.7',
     title: 'BOROFONE BO4',
     type: 'wireless',
+    id: '9',
   },
 ];
+
+export const wireCards = cardsData.filter((item) => item.type === 'wire');
+export const wirelessCards = cardsData.filter((item) => item.type === 'wireless');

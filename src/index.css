@@ -6,17 +6,15 @@ body{
   margin: 0;
   padding: 0;
   background: #EAEAEA;
-  
 }
 
 .container{
   width: 1440px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   margin-left: auto;
   margin-right: auto;
 }
 
-.header__icons_container{
-  display: flex;
-  width: 120px;
-  height: 60px;
-}
