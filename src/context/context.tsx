@@ -9,10 +9,7 @@ export const inBasketContext = React.createContext<IInBasketContext | undefined>
 export function useInBasketContext() {
   const context = useContext(inBasketContext);
   if (context === undefined) {
-    throw Error(
-      'RadioGroupItem must be used inside of a RadioGroup, ' +
-        'otherwise it will not function correctly.'
-    );
+    throw Error('context is undefined');
   }
   return context;
 }
